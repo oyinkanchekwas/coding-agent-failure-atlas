@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "coding-agent-failure-atlas"
+version = "0.1.0"
+description = "A labelled atlas of coding-agent failure traces for monitor research."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Oyinkansola Onwuchekwa", email = "keenahkaychekwas@gmail.com" }
+]
+keywords = [
+  "ai-safety",
+  "coding-agents",
+  "failure-modes",
+  "llm-evaluation",
+  "monitoring",
+  "agent-control"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Security"
+]
+
+[project.scripts]
+failure-atlas = "failure_atlas.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
