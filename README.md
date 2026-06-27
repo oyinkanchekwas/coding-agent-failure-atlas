@@ -44,8 +44,6 @@ PYTHONPATH=src python3 -m unittest discover -s tests -v
 
 See [docs/TAXONOMY.md](docs/TAXONOMY.md).
 
-## Why This Is Not Just Another Prompt Dataset
-
 The unit of analysis is the coding-agent trace, not an isolated instruction. Each case answers:
 
 - What did the user ask?
@@ -99,5 +97,4 @@ See [docs/RELATED_WORK.md](docs/RELATED_WORK.md).
 
 ## Status
 
-Seed release. The next useful step is to add anonymised real traces, reviewer disagreement labels,
-and baseline monitor results.
+Seed release: synthetic trace cases, schema validation, analysis code, documentation, and tests.
