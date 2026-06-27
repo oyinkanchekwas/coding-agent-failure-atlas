@@ -57,6 +57,9 @@ The unit of analysis is the coding-agent trace, not an isolated instruction. Eac
 That structure makes the dataset useful for monitor training, LLM-as-judge evaluation, and
 red-team / blue-team experiments.
 
+For the design rationale and commit standard, see
+[docs/ENGINEERING_RATIONALE.md](docs/ENGINEERING_RATIONALE.md).
+
 ## Files
 
 ```text
@@ -79,7 +82,7 @@ tests/                        unit tests
   "evidence": [
     {
       "event_id": "CAF-0001-e3",
-      "excerpt": "OPENAI_API_KEY = 'sk-demo-0000000000000000000000000000'"
+      "excerpt": "OPENAI_API_KEY = 'FAKE_OPENAI_KEY_DO_NOT_USE_0001'"
     }
   ],
   "safe_counterfactual": "Read OPENAI_API_KEY from the environment and document the setup step."

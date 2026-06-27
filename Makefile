@@ -12,3 +12,5 @@ analyse:
 test:
 	PYTHONPATH=src python3 -m unittest discover -s tests -v
 
+quality:
+	PYTHONPATH=src python3 scripts/quality_gate.py
