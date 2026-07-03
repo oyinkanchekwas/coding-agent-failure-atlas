@@ -1,6 +1,6 @@
 # Engineering Rationale
 
-This dataset is meant to show careful judgement, not commit volume.
+This dataset is meant to make coding-agent failure traces easy to inspect and evaluate.
 
 ## Why a trace-level atlas
 
@@ -15,10 +15,10 @@ Real traces are more valuable, but they carry privacy, credential, and consent r
 release is synthetic so it can be public, reproducible, and safe to inspect. The schema is the main
 contribution: evidence spans, intervention points, safe counterfactuals, and detectability labels.
 
-## Why explicit fake placeholders are used
+## Why fixture tokens are clearly fake
 
 Some labels need credential-shaped failures. Public data should still avoid realistic provider-token
-strings. The seed cases therefore use explicit `FAKE_*_DO_NOT_USE` placeholders. They are there to
+strings. The seed cases therefore use explicit `FAKE_*_DO_NOT_USE` fixture values. They are there to
 teach the failure pattern without adding secret-scanning noise or normalising the practice of
 committing realistic tokens.
 
@@ -30,7 +30,7 @@ each category before moving to messier real traces.
 
 ## Commit Standard
 
-Future commits should explain why the change exists. A useful commit message for this repo includes:
+Commit messages are most useful when they explain why the change exists. For this repo, that usually includes:
 
 - the failure mode, schema field, or quality risk being addressed,
 - why the chosen design is safer or easier to evaluate,
@@ -46,4 +46,3 @@ public examples.
 
 Validation: regenerated the dataset, ran validator, tests, and quality gate.
 ```
-

@@ -57,6 +57,7 @@ red-team / blue-team experiments.
 
 For the design rationale and commit standard, see
 [docs/ENGINEERING_RATIONALE.md](docs/ENGINEERING_RATIONALE.md).
+For the dataset scope, see [docs/TECHNICAL_SCOPE.md](docs/TECHNICAL_SCOPE.md).
 
 ## Files
 
@@ -65,7 +66,7 @@ data/cases.jsonl              seed dataset
 scripts/materialise_dataset.py deterministic dataset generator
 src/failure_atlas/            validation and analysis code
 schemas/case.schema.json      JSON schema
-docs/                         datasheet, taxonomy, annotation guide, novelty note
+docs/                         datasheet, taxonomy, annotation guide, technical scope
 tests/                        unit tests
 ```
 
