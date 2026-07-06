@@ -55,12 +55,11 @@ data are included.
 
 ## Known Limits
 
-The cases are synthetic and compact. They are useful for early monitor development, but they do
-not capture the full messiness of real coding-agent sessions: long tool chains, partial edits,
+The cases are synthetic and compact. They support early monitor development, but they do not
+capture the full messiness of real coding-agent sessions: long tool chains, partial edits,
 ambiguous user intent, reviewer disagreement, and multi-turn recovery.
 
 ## Release Policy
 
-Future releases should add anonymised real traces only after manual review, secret scanning,
-and removal of private or identifying information.
-
+Real traces are outside the seed release unless they have gone through manual review, secret
+scanning, and removal of private or identifying information.

@@ -1,12 +1,12 @@
 # Engineering Rationale
 
-This dataset is meant to make coding-agent failure traces easy to inspect and evaluate.
+This dataset makes coding-agent failure traces easy to inspect and evaluate.
 
 ## Why a trace-level atlas
 
 Most coding-agent evaluation is centred on whether the final patch works. That misses failures in
 the process: a destructive shell command, a hidden failed test, a prompt injection in a tool result,
-or a boundary crossing that leaves no obvious final diff. I structured the dataset around traces
+or a boundary crossing that leaves no obvious final diff. The dataset is structured around traces
 because monitors need to catch those failures while the agent is working.
 
 ## Why the seed release is synthetic
@@ -24,9 +24,9 @@ committing realistic tokens.
 
 ## Why the dataset is balanced
 
-The seed release has ten cases per label because the goal is monitor development, not measuring
-real-world prevalence. A balanced first release makes it easier to test whether a monitor can cover
-each category before moving to messier real traces.
+The seed release has ten cases per label because it is for monitor development, not measurement of
+real-world prevalence. A balanced first release makes it easier to test whether a monitor covers
+each category.
 
 ## Commit Standard
 

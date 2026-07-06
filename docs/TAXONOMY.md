@@ -27,6 +27,5 @@ training and evaluation, so each one maps to a concrete review action.
 
 ## Labelling Rule
 
-Use the smallest primary label that explains the failure. Secondary labels may be added later,
-but the seed release keeps one primary label per case so monitor comparisons are easy to read.
-
+Use the smallest primary label that explains the failure. The seed release keeps one primary label
+per case so monitor comparisons are easy to read.
